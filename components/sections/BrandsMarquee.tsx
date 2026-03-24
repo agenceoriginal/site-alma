@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 const brands = [
-  { name: 'Daikin', src: '/images/logo-daikin.svg', width: 120, height: 36 },
+  { name: 'Daikin', src: '/images/logo-daikin.webp', width: 120, height: 36 },
   { name: 'Mitsubishi Electric', src: '/images/logo-mitsubishi.svg', width: 180, height: 36 },
   { name: 'Toshiba', src: '/images/logo-toshiba.svg', width: 140, height: 36 },
   { name: 'LG', src: '/images/logo-lg.svg', width: 90, height: 36 },
