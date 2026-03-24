@@ -27,8 +27,8 @@ export default function HeroSection() {
 
           {/* H1 */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">
-            L&apos;Énergie de Demain,{' '}
-            <span className="text-brand-500">Aujourd&apos;hui</span>
+            Optimisez votre énergie,{' '}
+            <span className="text-brand-500">toute l&apos;année</span>
           </h1>
 
           {/* Subtitle */}
@@ -54,15 +54,26 @@ export default function HeroSection() {
           </div>
 
           {/* TrustScore */}
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-0.5">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
-              ))}
+          <div className="flex flex-wrap items-center gap-4">
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-0.5">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <div className="text-sm text-white/80">
+                <span className="font-bold text-white">4.8/5</span>
+                {' '}— 3 500+ projets réalisés
+              </div>
             </div>
-            <div className="text-sm text-white/80">
-              <span className="font-bold text-white">4.8/5</span>
-              {' '}— 3 500+ projets réalisés
+            {/* Trustavis badge */}
+            <div className="flex items-center gap-2 bg-white/10 border border-white/20 rounded-lg px-3 py-1.5">
+              <div className="flex items-center gap-1">
+                <Star size={14} className="fill-[#00B67A] text-[#00B67A]" />
+                <span className="text-xs font-bold text-white">Trustscore 4.8</span>
+              </div>
+              <div className="w-px h-4 bg-white/20" />
+              <span className="text-xs font-semibold text-[#00B67A] tracking-wide">trustavis</span>
             </div>
           </div>
         </div>

@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link
             href="/estimation-gratuite"
-            className="hidden sm:inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors"
+            className="hidden sm:inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-6 py-3 rounded-xl transition-colors"
           >
             Estimation gratuite
           </Link>

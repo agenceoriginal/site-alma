@@ -1,9 +1,14 @@
+import Image from 'next/image'
+
 const brands = [
-  'Daikin', 'Mitsubishi', 'Samsung', 'Atlantic', 'Panasonic',
-  'LG', 'Bosch', 'Viessmann', 'Velux', 'Knauf',
-  'Daikin', 'Mitsubishi', 'Samsung', 'Atlantic', 'Panasonic',
-  'LG', 'Bosch', 'Viessmann', 'Velux', 'Knauf',
+  { name: 'Daikin', src: '/images/logo-daikin.svg', width: 120, height: 36 },
+  { name: 'Mitsubishi Electric', src: '/images/logo-mitsubishi.svg', width: 180, height: 36 },
+  { name: 'Toshiba', src: '/images/logo-toshiba.svg', width: 140, height: 36 },
+  { name: 'LG', src: '/images/logo-lg.svg', width: 90, height: 36 },
+  { name: 'Bosch', src: '/images/logo-bosch.svg', width: 110, height: 36 },
 ]
+
+const allBrands = [...brands, ...brands]
 
 export default function BrandsMarquee() {
   return (
@@ -16,13 +21,16 @@ export default function BrandsMarquee() {
 
       <div className="relative overflow-hidden">
         <div className="flex animate-marquee gap-16 items-center whitespace-nowrap">
-          {brands.map((brand, index) => (
-            <span
-              key={`${brand}-${index}`}
-              className="text-lg font-bold text-navy/30 hover:text-navy/60 transition-colors shrink-0 tracking-wide"
-            >
-              {brand}
-            </span>
+          {allBrands.map((brand, index) => (
+            <div key={`${brand.name}-${index}`} className="shrink-0 opacity-30 hover:opacity-60 transition-opacity">
+              <Image
+                src={brand.src}
+                alt={brand.name}
+                width={brand.width}
+                height={brand.height}
+                className="h-9 w-auto object-contain"
+              />
+            </div>
           ))}
         </div>
       </div>

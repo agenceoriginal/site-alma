@@ -42,9 +42,9 @@ export default function RealisationsGrid() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
           <div>
-            <p className="text-brand-500 text-sm font-semibold uppercase tracking-widest mb-3">Portfolio</p>
+            <p className="text-brand-500 text-sm font-semibold uppercase tracking-widest mb-3">Ce que nous faisons de mieux</p>
             <h2 className="text-3xl md:text-4xl font-bold text-navy tracking-tight">
-              Nos Réalisations
+              Nos prestations
             </h2>
             <p className="text-lg text-navy/50 mt-3 max-w-lg">
               Découvrez quelques-uns de nos projets récents à travers la France.
