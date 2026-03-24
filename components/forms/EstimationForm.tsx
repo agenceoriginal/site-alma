@@ -41,13 +41,42 @@ export default function EstimationForm() {
   })
 
   const totalSteps = 4
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState(false)
 
   const handleNext = () => setStep((s) => Math.min(s + 1, totalSteps))
   const handlePrev = () => setStep((s) => Math.max(s - 1, 1))
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setStep(4)
+    setIsSubmitting(true)
+    setSubmitError(false)
+
+    const body = new URLSearchParams({
+      'form-name': 'estimation',
+      service: formData.service ?? '',
+      logement: formData.logement ?? '',
+      surface: formData.surface ?? '',
+      prenom: formData.prenom,
+      nom: formData.nom,
+      email: formData.email,
+      telephone: formData.telephone,
+      codePostal: formData.codePostal,
+    })
+
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      })
+      if (!res.ok) throw new Error()
+      setStep(4)
+    } catch {
+      setSubmitError(true)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -246,6 +275,12 @@ export default function EstimationForm() {
               </div>
             </div>
 
+            {submitError && (
+              <p className="text-sm text-red-500 mb-4 text-center">
+                Une erreur est survenue. Veuillez réessayer ou nous appeler directement.
+              </p>
+            )}
+
             <div className="flex gap-3">
               <button
                 type="button"
@@ -256,9 +291,10 @@ export default function EstimationForm() {
               </button>
               <button
                 type="submit"
-                className="flex-1 bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
+                disabled={isSubmitting}
+                className="flex-1 bg-brand-500 hover:bg-brand-600 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
               >
-                Envoyer ma demande
+                {isSubmitting ? 'Envoi en cours...' : 'Envoyer ma demande'}
               </button>
             </div>
           </form>

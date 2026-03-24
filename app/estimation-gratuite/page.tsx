@@ -63,6 +63,18 @@ export default function EstimationGratuitePage() {
 
           {/* Right: Form */}
           <div>
+            {/* Hidden form for Netlify build-time detection */}
+            <form name="estimation" data-netlify="true" hidden>
+              <input type="hidden" name="form-name" value="estimation" />
+              <input type="text" name="service" />
+              <input type="text" name="logement" />
+              <input type="text" name="surface" />
+              <input type="text" name="prenom" />
+              <input type="text" name="nom" />
+              <input type="email" name="email" />
+              <input type="tel" name="telephone" />
+              <input type="text" name="codePostal" />
+            </form>
             <EstimationForm />
           </div>
         </div>
