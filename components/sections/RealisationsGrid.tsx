@@ -7,31 +7,37 @@ const realisations = [
     src: '/images/realisation-1.webp',
     alt: 'Installation panneaux solaires photovoltaïques sur toit',
     label: 'Solaire',
+    href: '/solaire',
   },
   {
     src: '/images/realisation-2.webp',
     alt: 'Technicien pose de panneaux solaires',
     label: 'Solaire',
+    href: '/solaire',
   },
   {
     src: '/images/realisation-3.webp',
     alt: 'Équipe installation solaire sur maison',
     label: 'Solaire',
+    href: '/solaire',
   },
   {
     src: '/images/realisation-4.webp',
     alt: 'Parc solaire résidentiel',
     label: 'Solaire',
+    href: '/solaire',
   },
   {
     src: '/images/realisation-5.webp',
     alt: 'Intérieur maison rénovée — confort thermique',
-    label: 'Rénovation',
+    label: 'Isolation',
+    href: '/isolation',
   },
   {
     src: '/images/realisation-6.webp',
     alt: 'Espace de vie confortable après rénovation énergétique',
-    label: 'Rénovation',
+    label: 'Isolation',
+    href: '/isolation',
   },
 ]
 
@@ -58,8 +64,9 @@ export default function RealisationsGrid() {
         {/* Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
           {realisations.map((item, index) => (
-            <div
+            <Link
               key={index}
+              href={item.href}
               className="group relative rounded-2xl overflow-hidden aspect-square"
             >
               <Image
@@ -74,7 +81,7 @@ export default function RealisationsGrid() {
                   {item.label}
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
