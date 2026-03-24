@@ -54,6 +54,7 @@ export default function EstimationForm() {
 
     const body = new URLSearchParams({
       'form-name': 'estimation',
+      'bot-field': '',
       service: formData.service ?? '',
       logement: formData.logement ?? '',
       surface: formData.surface ?? '',
