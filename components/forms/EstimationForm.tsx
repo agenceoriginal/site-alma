@@ -66,7 +66,7 @@ export default function EstimationForm() {
     })
 
     try {
-      const res = await fetch('/', {
+      const res = await fetch('/netlify-forms.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: body.toString(),
