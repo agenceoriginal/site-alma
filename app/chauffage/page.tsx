@@ -5,8 +5,14 @@ import { Thermometer, ArrowRight, Star, CheckCircle, Flame, Snowflake, Euro } fr
 import CtaBanner from '@/components/sections/CtaBanner'
 
 export const metadata: Metadata = {
-  title: 'Solutions de Chauffage — Alma Énergie',
-  description: 'Pompes à chaleur, chaudières et planchers chauffants. Solutions de chauffage performantes et économiques avec Alma Énergie.',
+  title: 'Pompe à Chaleur & Solutions de Chauffage',
+  description: 'Pompes à chaleur, chaudières à condensation et planchers chauffants. Réduisez votre facture de chauffage jusqu\'à 60%. Certifié RGE, éligible MaPrimeRénov\'.',
+  keywords: ['pompe à chaleur', 'PAC air eau', 'chauffage économique', 'MaPrimeRénov chauffage', 'plancherchauffant', 'QualiPAC'],
+  openGraph: {
+    title: 'Pompe à Chaleur & Solutions de Chauffage — Alma Énergie',
+    description: 'Réduisez votre facture de chauffage jusqu\'à 60% avec nos solutions certifiées RGE.',
+    images: [{ url: '/images/chauffage-hero.webp', alt: 'Intérieur confortable avec chauffage performant' }],
+  },
 }
 
 const benefits = [
@@ -30,8 +36,8 @@ export default function ChauffagePage() {
       <section className="relative bg-navy text-white py-20 px-4 md:px-8 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85&auto=format&fit=crop"
-            alt="Installation pompe à chaleur"
+            src="/images/chauffage-hero.webp"
+            alt="Intérieur confortable — chauffage performant"
             fill
             className="object-cover object-center"
             priority

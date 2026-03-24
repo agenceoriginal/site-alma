@@ -4,34 +4,34 @@ import { ArrowRight } from 'lucide-react'
 
 const realisations = [
   {
-    src: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80&auto=format&fit=crop',
-    alt: 'Installation panneaux solaires photovoltaïques',
+    src: '/images/realisation-1.webp',
+    alt: 'Installation panneaux solaires photovoltaïques sur toit',
     label: 'Solaire',
   },
   {
-    src: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80&auto=format&fit=crop',
+    src: '/images/realisation-2.webp',
+    alt: 'Technicien pose de panneaux solaires',
+    label: 'Solaire',
+  },
+  {
+    src: '/images/realisation-3.webp',
+    alt: 'Équipe installation solaire sur maison',
+    label: 'Solaire',
+  },
+  {
+    src: '/images/realisation-4.webp',
     alt: 'Parc solaire résidentiel',
     label: 'Solaire',
   },
   {
-    src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop',
-    alt: 'Pompe à chaleur installation extérieure',
-    label: 'Chauffage',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80&auto=format&fit=crop',
-    alt: 'Travaux isolation intérieure',
-    label: 'Isolation',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&q=80&auto=format&fit=crop',
-    alt: 'Maison rénovée moderne',
+    src: '/images/realisation-5.webp',
+    alt: 'Intérieur maison rénovée — confort thermique',
     label: 'Rénovation',
   },
   {
-    src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80&auto=format&fit=crop',
-    alt: 'Technicien installation professionnelle',
-    label: 'Installation',
+    src: '/images/realisation-6.webp',
+    alt: 'Espace de vie confortable après rénovation énergétique',
+    label: 'Rénovation',
   },
 ]
 

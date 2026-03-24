@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1800&q=85&auto=format&fit=crop"
+          src="/images/hero.webp"
           alt="Panneaux solaires sur toit"
           fill
           className="object-cover object-center"

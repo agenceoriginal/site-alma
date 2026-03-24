@@ -5,8 +5,14 @@ import { Home, ArrowRight, Star, CheckCircle, Wind, TrendingUp, ShieldCheck } fr
 import CtaBanner from '@/components/sections/CtaBanner'
 
 export const metadata: Metadata = {
-  title: 'Isolation Thermique — Alma Énergie',
-  description: 'Isolation des combles, murs et planchers avec Alma Énergie. Améliorez votre DPE et réduisez vos factures de chauffage.',
+  title: 'Isolation Thermique — Combles, Murs & Planchers',
+  description: 'Isolation des combles, murs et planchers avec Alma Énergie. Améliorez votre DPE jusqu\'à la classe A. Jusqu\'à 100% de financement via MaPrimeRénov\' et CEE.',
+  keywords: ['isolation thermique', 'isolation combles', 'isolation murs', 'DPE', 'MaPrimeRénov isolation', 'laine de roche', 'ouate cellulose'],
+  openGraph: {
+    title: 'Isolation Thermique — Alma Énergie',
+    description: 'Améliorez votre DPE jusqu\'à la classe A. Jusqu\'à 100% de financement disponible.',
+    images: [{ url: '/images/isolation-hero.webp', alt: 'Travaux d\'isolation thermique des combles' }],
+  },
 }
 
 const benefits = [
@@ -30,8 +36,8 @@ export default function IsolationPage() {
       <section className="relative bg-navy text-white py-20 px-4 md:px-8 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=1800&q=85&auto=format&fit=crop"
-            alt="Travaux d'isolation thermique"
+            src="/images/isolation-hero.webp"
+            alt="Travaux d'isolation thermique des combles"
             fill
             className="object-cover object-center"
             priority

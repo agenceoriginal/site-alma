@@ -71,7 +71,7 @@ export default function StepsSection() {
           {/* Right: Photo */}
           <div className="relative rounded-3xl overflow-hidden h-[500px] shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop"
+              src="/images/consultation.webp"
               alt="Couple consultant un expert en rénovation énergétique"
               fill
               className="object-cover"

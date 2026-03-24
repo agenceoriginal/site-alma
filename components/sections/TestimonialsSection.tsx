@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Star } from 'lucide-react'
 
 const stats = [
@@ -13,21 +12,24 @@ const testimonials = [
     city: 'Lyon',
     service: 'Solaire',
     quote: 'Installation impeccable ! Nos panneaux solaires fonctionnent parfaitement depuis 2 ans. La facture d\'électricité a chuté de 60%. Je recommande vivement Alma Énergie.',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&q=80&auto=format&fit=crop&crop=face',
+    initials: 'MD',
+    color: 'bg-brand-500',
   },
   {
     name: 'Jean-Pierre Martin',
     city: 'Bordeaux',
     service: 'Chauffage',
     quote: 'Équipe professionnelle et réactive. La pompe à chaleur est parfaitement dimensionnée pour notre maison. Excellent rapport qualité-prix, bravo !',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&q=80&auto=format&fit=crop&crop=face',
+    initials: 'JM',
+    color: 'bg-red-500',
   },
   {
     name: 'Sophie Lambert',
     city: 'Toulouse',
     service: 'Isolation',
     quote: 'Notre maison est maintenant classée B au DPE. L\'isolation des combles a transformé notre confort thermique. Merci à toute l\'équipe Alma Énergie.',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&q=80&auto=format&fit=crop&crop=face',
+    initials: 'SL',
+    color: 'bg-green-500',
   },
 ]
 
@@ -71,13 +73,8 @@ export default function TestimonialsSection() {
 
               {/* Author */}
               <div className="flex items-center gap-3">
-                <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0">
-                  <Image
-                    src={t.avatar}
-                    alt={t.name}
-                    fill
-                    className="object-cover"
-                  />
+                <div className={`w-10 h-10 rounded-full ${t.color} flex items-center justify-center shrink-0`}>
+                  <span className="text-white text-sm font-bold">{t.initials}</span>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-navy">{t.name}</p>

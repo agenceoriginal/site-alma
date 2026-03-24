@@ -44,8 +44,8 @@ export default function EnergyLabelSection() {
           {/* Right: Photo with overlay */}
           <div className="relative rounded-3xl overflow-hidden h-[460px] shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=900&q=85&auto=format&fit=crop"
-              alt="Famille heureuse dans un intérieur confortable après rénovation énergétique"
+              src="/images/energie-label.webp"
+              alt="Intérieur lumineux et confortable après rénovation énergétique"
               fill
               className="object-cover"
             />

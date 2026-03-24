@@ -5,8 +5,14 @@ import { Sun, ArrowRight, Star, CheckCircle, Zap, Leaf, TrendingDown } from 'luc
 import CtaBanner from '@/components/sections/CtaBanner'
 
 export const metadata: Metadata = {
-  title: 'Panneaux Solaires Photovoltaïques — Alma Énergie',
-  description: 'Installez des panneaux solaires photovoltaïques avec Alma Énergie. Réduisez vos factures jusqu\'à 70% et bénéficiez des aides de l\'État.',
+  title: 'Panneaux Solaires Photovoltaïques',
+  description: 'Installez des panneaux solaires photovoltaïques avec Alma Énergie. Réduisez vos factures jusqu\'à 70%, bénéficiez de MaPrimeRénov\' et de la TVA à 5,5%. Devis gratuit.',
+  keywords: ['panneaux solaires', 'photovoltaïque', 'installation solaire', 'autoconsommation', 'MaPrimeRénov solaire', 'TVA 5.5%'],
+  openGraph: {
+    title: 'Panneaux Solaires Photovoltaïques — Alma Énergie',
+    description: 'Réduisez vos factures d\'électricité jusqu\'à 70% avec nos installations solaires certifiées RGE.',
+    images: [{ url: '/images/solaire-hero.webp', alt: 'Panneaux solaires sur toit de maison' }],
+  },
 }
 
 const benefits = [
@@ -30,7 +36,7 @@ export default function SolairePage() {
       <section className="relative bg-navy text-white py-20 px-4 md:px-8 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1800&q=85&auto=format&fit=crop"
+            src="/images/solaire-hero.webp"
             alt="Panneaux solaires sur toit de maison"
             fill
             className="object-cover object-center"

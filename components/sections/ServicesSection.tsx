@@ -7,25 +7,22 @@ const services = [
     title: 'Panneaux Solaires',
     description: 'Produisez votre propre électricité et réduisez votre facture énergétique jusqu\'à 70% grâce à nos installations photovoltaïques de qualité.',
     href: '/solaire',
-    // "Brown brick house with solar panels on roof" — Unsplash
-    image: 'https://images.unsplash.com/photo-9CalgkSRZb8?w=600&q=80&auto=format&fit=crop',
+    image: '/images/service-solaire.webp',
     imageAlt: 'Panneaux solaires photovoltaïques sur toit de maison',
   },
   {
     title: 'Chauffage',
     description: 'Pompes à chaleur, chaudières à condensation et planchers chauffants. Des solutions modernes pour un confort optimal et des économies durables.',
     href: '/chauffage',
-    // "A bicycle parked next to a heat pump" — Unsplash
-    image: 'https://images.unsplash.com/photo-bLuvoNtUa70?w=600&q=80&auto=format&fit=crop',
-    imageAlt: 'Pompe à chaleur extérieure dans un jardin',
+    image: '/images/service-chauffage.webp',
+    imageAlt: 'Intérieur confortable grâce au chauffage performant',
   },
   {
     title: 'Isolation Thermique',
     description: 'Isolation des combles, murs et planchers. Stoppez les déperditions de chaleur et améliorez votre DPE jusqu\'à la classe A.',
     href: '/isolation',
-    // "Attic with insulation, beams, and storage" — Unsplash
-    image: 'https://images.unsplash.com/photo-_oy5VYpFe5Y?w=600&q=80&auto=format&fit=crop',
-    imageAlt: 'Isolation thermique des combles avec laine minérale',
+    image: '/images/service-isolation.webp',
+    imageAlt: 'Isolation thermique des combles avec laine soufflée',
   },
 ]
 
