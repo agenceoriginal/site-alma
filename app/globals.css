@@ -2,15 +2,16 @@
 
 @theme inline {
   /* Brand Colors */
-  --color-brand-50: #f0f4ff;
-  --color-brand-100: #E2EBF5;
-  --color-brand-200: #c5d7eb;
-  --color-brand-500: #4060F0;
-  --color-brand-600: #3050D0;
-  --color-brand-700: #2040B0;
-  --color-brand-900: #1A2844;
-  --color-navy: #1A2844;
-  --color-clair: #E2EBF5;
+  --color-brand-50: #f5f0e8;
+  --color-brand-100: #ede8d9;
+  --color-brand-200: #ddd5c0;
+  --color-brand-500: #b85c38;
+  --color-brand-600: #a35030;
+  --color-brand-700: #8e4428;
+  --color-brand-900: #3d3529;
+  --color-navy: #3d3529;
+  --color-clair: #ede8d9;
+  --color-kaki: #7a9080;
 
   /* Fonts */
   --font-sans: 'Unbounded', system-ui, sans-serif;
@@ -23,7 +24,7 @@
 
 body {
   background: white;
-  color: #1A2844;
+  color: #3d3529;
   font-family: 'Unbounded', system-ui, sans-serif;
 }
 
