@@ -18,15 +18,15 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-navy text-white shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
             src="/images/logo.svg"
             alt="Alma Énergie"
-            width={140}
-            height={40}
-            className="h-9 w-auto"
+            width={160}
+            height={46}
+            className="h-11 w-auto"
             priority
           />
         </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link
             href="/estimation-gratuite"
-            className="hidden sm:inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-6 py-3 rounded-xl transition-colors"
+            className="hidden sm:inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-7 py-3.5 rounded-xl transition-colors"
           >
             Estimation gratuite
           </Link>

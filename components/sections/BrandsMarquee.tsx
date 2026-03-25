@@ -20,9 +20,9 @@ export default function BrandsMarquee() {
       </div>
 
       <div className="relative overflow-hidden">
-        <div className="flex animate-marquee gap-16 items-center whitespace-nowrap">
+        <div className="flex w-max animate-marquee gap-16 items-center">
           {allBrands.map((brand, index) => (
-            <div key={`${brand.name}-${index}`} className="shrink-0 opacity-30 hover:opacity-60 transition-opacity w-32 h-10 flex items-center justify-center">
+            <div key={`${brand.name}-${index}`} className="shrink-0 opacity-40 hover:opacity-70 transition-opacity w-32 h-10 flex items-center justify-center text-navy">
               <Image
                 src={brand.src}
                 alt={brand.name}

@@ -80,7 +80,7 @@ export default function StepsSection() {
             <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-5 shadow-lg">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-xl bg-brand-500 flex items-center justify-center shrink-0">
-                  <span className="text-white font-bold text-lg">24h</span>
+                  <span className="text-white font-bold text-sm">24h</span>
                 </div>
                 <div>
                   <p className="font-bold text-navy text-sm">Réponse garantie sous 24h</p>

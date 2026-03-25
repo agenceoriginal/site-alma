@@ -42,6 +42,11 @@ export const metadata: Metadata = {
     description: 'Spécialiste en rénovation énergétique : panneaux solaires, chauffage et isolation thermique. Certifié RGE.',
     images: ['/images/hero.webp'],
   },
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   robots: {
     index: true,
     follow: true,
